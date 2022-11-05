@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background-color: hsl(248, 66%, 46%);
+                text-align: center;
+                margin-top: 100px;
+            }
+             
+            h1 {
+                color: rgb(235, 235, 234);
+                font-family: verdana;
+                font-size: 70px;
+            }
+             
+            p {
+                color: rgb(255, 255, 255);
+                font-family: verdana;
+                font-size: 50px;
+            }
+            </style>
+      <title>Welcome to ansible</title>
+    </head>
+    <body>
+    <h1>Welcome {{ username }} to ITI Web Server!</h1>
+    <p>Private ip: {{ ansible_default_ipv4.address }}</p>
+    <p>Private IP DNS hostname: {{ ansible_fqdn }}</p>
+
+    </body>
+</html>
+

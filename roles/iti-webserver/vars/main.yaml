@@ -1,0 +1,5 @@
+server_name: "{{ ansible_default_ipv4.address }}"
+# nginx_pkgs:
+#   - nginx
+nginx_svc: nginx
+nginx_html_dir: /var/www/html

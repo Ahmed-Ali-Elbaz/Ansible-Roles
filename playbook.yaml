@@ -1,0 +1,28 @@
+---
+- name: install nginx playbook
+  hosts: webservers
+  roles:
+    - iti-webserver
+
+
+- name: install jenkins playbook
+  hosts: jenkins_agents
+  roles:
+    - jenkins-server
+
+
+- name: MariaDB
+  hosts: dbservers
+  vars_files:
+    - roles/mariadb-server/vars/secrets.yaml
+  roles:
+    - mariadb-server
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+jenkins_svc: jenkins
+jdk_version: java-11-openjdk-devel
